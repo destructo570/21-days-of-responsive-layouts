@@ -1,0 +1,33 @@
+##--##Module: 1.1 Percentages vs Fixed widths--##
+
+1) Using fixed width in css elements (400px, 900px etc.)  can introduce issues
+like side scrolling.
+2) Instead of setting fixed width on elements we can instead use percentages
+which can make our lives much easier and keep our layouts responsive.
+
+##--Module: 1.2 Percentages on the child--##
+
+1)If we set a fixed value (let's say for width) for a child element and when child's width
+is more than the parent's width the content will overflow. We can easily fix this by using
+percentage values instead of fixed values.
+
+2)Setting percentages on an element will apply that value in relation to its parent,
+So let's say we have a child element and we set it's width to 50% then this child
+element will be 50% of the parent's width.
+
+
+##--Module: 1.3 Why it's a good idea to avoid heights--##
+
+1)Setting heights on elements can cause overflow issues if the content height is more
+than the height set to the container it will overflow.
+
+Solution: We can instead set padding to get some extra space for the content instead of
+setting a height on the container itself.
+This will solve our issue and the layout will stay responsive as well.
+
+
+Takeaways:
+1)By default css is responsive it's us who did something or changed something
+that makes the layout unresponsive. So we should find the issue and make sure our layouts
+stay responsive all the time.
+2)Percentage values are your friend when creating responsive layouts.
