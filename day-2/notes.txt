@@ -1,0 +1,58 @@
+##Getting familiar with relative units
+
+##--Module 1.1 Css em and rem explained--##
+
+1) If you set a font size using ems it will be in relation to that elements
+parent. So if we set an elements dont-size to 2em then it will go up to its parent
+and see what the font size is (here let's say its 16px generally the default font size on anybrowser is 16px)
+So font size for this element would be 16 * 2 = 32px
+
+2)Ems can keep compounding and this can be a problem if a parent has 2em font size
+so the child element would become 16 * 2 * 2 = 64px
+
+3)Rems were invented to solve this compounding issue in em units.
+Rem stands for RootEm.
+
+4)Rem looks at the root of the document so (html) for the font size.
+Rem units are more consistent while setting font sizes with ems can cause 
+compounding font size issues.
+
+5)We can also use these units for things other than font sizes setting 
+width, padding, margins or anyting that can take a unit like that.
+
+But when we are using these units on margins, paddings etc then it can bea little confusing.
+So in case of em when we set font size to an element it looks at the parent's
+font size and calculates the font size accordingly. But when we use em for margins or paddings etc.
+those units will not look for the parent's font-size but the element's intead.
+    So for example suppose we have a element whose font-size it 2em so it looks at its parent
+    and calculate's its font size which turns out to be 16*2=32px Now if we add margin to this element
+    margin: 2em then the margin would be calculated using the font-size of this element and not the parent'size
+    so 16*2*2=64px.
+
+In case of rem though it always looks at the html or root for font-size so it's always consistent.
+    So if we take the same example as above elements font size would turn out to be 16*2=32px
+    and the margin is also set to be 2em so it will look at the font size of root. So margin would be
+    16*2=32px
+
+6)We can use ems since it can be more adabtable. Let's say we set a padding of 2em on a button and the font-size: 2em
+the padding here will see the font size  and calculate it accordingly. This is helpful when we have another button a smaller or
+even a larger one and since our base button has paddings set in em all we need to do in these buttons is to
+set the font-size and the padding will adapt according to this font size.
+
+7) Rems are usefule when we want consistentency in our layout for example margins between elements.
+If we set them through rem the margins will always stay consistent since it looks at the font-size of root.
+
+8) We can take this adaptability feature even further using mediaqueries by setting font-size on html inside
+a media querie we can make the site's layout adapt to the different screen sizes whereas if we were to do this
+using pixel units. We would have to create multiple media queries to handle this kind of change in our layouts.
+
+
+##--Module 1.3 Why you shouldn't use em for font-size--##
+1) If we use ems we can run into issues od compounding font sizes while if we use rem the font size will
+remain consistent.
+For font sizes rem is a better choice since it makes sure that it's consistent everywhere while em canbe used for paddings, 
+margins etc since it can adapt to the font sizes.
+
+
+
+##--Module 1.2 Why you shouldn't set font sizes using em--##
