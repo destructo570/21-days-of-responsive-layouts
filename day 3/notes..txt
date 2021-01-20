@@ -1,0 +1,9 @@
+##-- Module 1.1 Adding in a max-width--##
+
+In big screens the content can fill up the whole width adn this can cause
+ux issues where the user will experience cognitive load while trying to
+read the content.
+
+To solve this issue we can add a max-width property to our content which
+will result in our content only covering up the specified width.
+ 
