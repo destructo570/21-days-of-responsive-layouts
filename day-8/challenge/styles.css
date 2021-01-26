@@ -5,10 +5,10 @@
 
 html {
   font-family: "Roboto";
-  font-size: 21px;
+  font-size: 1.3rem;
 }
 
-.intro {
+.hero {
   background-color: #23424a;
   color: white;
 }
@@ -42,5 +42,32 @@ html {
 .intro-desc {
   font-weight: 400;
   line-height: 1.5rem;
-  padding: 2rem 0;
+}
+
+.row {
+  display: flex;
+}
+
+.col + .col {
+  margin-left: 1rem;
+}
+
+.three-col {
+  text-align: center;
+  padding: 3em 0;
+}
+
+.three-col h2 {
+  color: #87629a;
+}
+
+.two-col {
+  text-align: center;
+  background-color: #136c72;
+  padding: 3em 0;
+  color: white;
+}
+
+p {
+  padding: 1em 0;
 }
