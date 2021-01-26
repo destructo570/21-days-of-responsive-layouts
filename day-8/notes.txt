@@ -1,0 +1,29 @@
+##--  An introduction to flexbox  --##
+
+1) Flexbox when applied to a parent div makes that div a flexbox container and
+all the children inside that parent become flexbox items. By default
+the flexbox-direction will be row. So all the child elements of flexbox container
+will be laid in a row where each child is in a column.
+
+2) By default the flexbox item's behavior is to take the least amount of space possible.
+So if there are let's say 5 items in a container and all the items have a width of
+100% it will try to evenly distribute it to all the items and show all of them in a
+row(which can sometimes cause content to overflow since content width becomes more than the
+container width)
+
+##-- Adding spacing between columns --##
+
+Two ways to create a gap between columns
+1) Using gaps
+  Ex. gap: 100px
+  But this might not be widely supported for flexbox.
+
+
+2) Using combinator selectors
+    .col + .col{
+      margin-left: 100px
+    }
+
+What this is doing is it's selecting only those columns who have an adjacent column
+before them and then with those columns selected we add a margin-left for creating
+spacing between the columns.    
