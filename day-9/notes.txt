@@ -1,0 +1,31 @@
+##-- Adding Hero Image--##
+
+1) By default display-flex stretches all the column items to have same height
+So if we have an img tag inside our flexbox container it will stretch the image
+to have equal height as other items.
+
+2) How to fix this?
+
+  #1 Put align-tems: flex-start; on row (But if you prefer to make row do least amount of thing possible)
+
+  #2 Wrap the element inside a div, we dont have to give it any class. Now the div is tretching no the image.
+
+  #3 On image we can add a class and in the css we can select it and apply align-self: flex-start;
+
+
+##-- Column widths and flexbox--##
+
+If we have content thats lower than 100% then We might have some white-space left between elements
+which we can distribute by using justify-content on our row (flex-container). Space-between, center, flex-end etc
+are some of the options we have.
+
+*Justified content is on the main axis.
+
+
+##-- Ensuring imgages are responsive --##
+
+If images are not a direct child to flex container i.e. they are inside a div. They won't be responsive anymore
+and we will have side scrolling issue.
+To fix this we can select all the img tag in our html and apply max-width; 100%
+
+This ensures that the iamge size is always 100% but if the parent shrinks our images will also shrink responsively.
