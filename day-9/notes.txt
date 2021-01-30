@@ -8,7 +8,7 @@ to have equal height as other items.
 
   #1 Put align-tems: flex-start; on row (But if you prefer to make row do least amount of thing possible)
 
-  #2 Wrap the element inside a div, we dont have to give it any class. Now the div is tretching no the image.
+  #2 Wrap the element inside a div, we dont have to give it any class. Now the div is stretching no the image.
 
   #3 On image we can add a class and in the css we can select it and apply align-self: flex-start;
 
