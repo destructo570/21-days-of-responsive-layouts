@@ -92,6 +92,10 @@ header {
   display: flex;
 }
 
+.nav__list--primary {
+  margin: 0 auto;
+}
+
 .nav__link {
   color: #fff;
   font-size: 0.75rem;
