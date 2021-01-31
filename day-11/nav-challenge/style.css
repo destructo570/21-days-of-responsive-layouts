@@ -74,8 +74,15 @@ header {
   padding: 0.5em 0;
 }
 
-.nav__item {
+.logo {
   margin-right: 1em;
+}
+.nav {
+  flex-grow: 1;
+}
+
+.nav__item + .nav__item {
+  margin-left: 1em;
 }
 
 .nav__list {

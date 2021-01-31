@@ -1,0 +1,3 @@
+We have main axis going horizontally and cross axis going up and down.
+In our case justified content is working on the main axis.
+align-item works on the direct children.
