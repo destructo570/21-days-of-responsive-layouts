@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.33rem;
+  margin: 0;
+}
+
+.container {
+  max-width: 1128px;
+  min-height: 660px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.flex-direction-vertical {
+  flex-direction: column;
+}
+
+.hero--center {
+  margin: auto 0;
+  border: 2px solid red;
+}
+
+.hero {
+  background-color: #f3eed9;
+  text-align: center;
+  margin: auto;
+}
+
+.hero h1 {
+  color: #824936;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 2.85rem;
+}
+
+.hero p {
+  color: #222c2a;
+  font-family: "Roboto Light", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.12rem;
+  letter-spacing: 0.5rem;
+}
