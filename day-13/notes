@@ -1,0 +1,33 @@
+Media queries
+
+They let us add new styles or overrride existing styles that only target
+specific conditions.
+
+we can put media-type and media-features in them.
+
+Example:
+
+@media media-type(media-features){
+
+}
+
+# If we dont' include any media-type. It will target all of them.
+
+#600px or bigger
+@media (min-width: 600px){    
+}
+
+#600px or smaller
+@media (max-width: 600px){
+
+}
+
+#we can combine multiple features
+@media(min-width: 600px) 
+and (max-width: 900px){
+
+}
+
+
+#Order of things is important
+It's going to be from smallest to biggest inside your media queries.
