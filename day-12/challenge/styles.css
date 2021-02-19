@@ -16,6 +16,7 @@ img {
 h2 {
   font-family: "Playfair Display", sans-serif;
   font-size: 2.25rem;
+  margin: 0;
 }
 
 p {
@@ -37,15 +38,12 @@ p {
   margin-left: 2em;
 }
 
-.hero--center {
-  margin: auto 0;
-}
-
 .hero {
   background-color: #f3eed9;
   text-align: center;
-  margin: auto;
   min-height: 660px;
+  display: flex;
+  align-items: center;
 }
 
 .hero h1 {
@@ -88,4 +86,18 @@ p {
 
 .promo-info {
   width: 60%;
+}
+
+@media (max-width: 600px) {
+  .row {
+    display: block;
+  }
+
+  .col + .col {
+    margin-left: 0;
+  }
+
+  .promo-info {
+    width: 100%;
+  }
 }

@@ -1,0 +1,8 @@
+##- How to decide breakpoints to use -##
+
+When does my layout fail or break.
+To make your css easier to maintain have as few breakpoints as possible.
+
+
+Resources: 
+https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/

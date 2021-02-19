@@ -1,0 +1,9 @@
+##- MetaViewPort Tag-##
+
+metaviewport tag tells the browser to set the width of the viewport equal to the 
+width of te device.
+
+If we don't have this in our html it will make the website unresponsive and 
+basically the whole website will get shrinked down to show up on smaller devices
+causing the content  
+
